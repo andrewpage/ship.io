@@ -9,17 +9,56 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var sEmailField: UITextField!
+    @IBOutlet weak var sPasswordField: UITextField!
+    @IBOutlet weak var sErrorLabel: UILabel!
+    
+    var apiManager: SAPIManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        clearError()
+        
+        apiManager = SAPIManager()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func loginAction(sender: UIButton) {
+        var email = sEmailField.text
+        var password = sPasswordField.text
+        
+        if(email.isEmpty) {
+            error("You must enter an email.")
+            return
+        } else if(password.isEmpty) {
+            error("You must enter a password.")
+            return
+        } else {
+            clearError()
+            
+            apiManager.login(email, password: password, success: { () in
+                    self.apiManager.loadJobs({ (jobs) -> Void in
+                        for job in jobs {
+                            println("Name: " + job.friendlyName)
+                        }
+                    }, failed: { (errorMessage) -> Void in
+                        println(errorMessage)
+                    })
+                },  failed: { (errorMessage: String) in
+                self.error(errorMessage)
+            })
+        }
+    }
+    
+    func error(errorMessage: String) {
+        sErrorLabel.text = errorMessage;
+    }
+    
+    func clearError() {
+        sErrorLabel.text = ""
+    }
 }
 

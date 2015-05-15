@@ -13,6 +13,10 @@
 		0C14CA7B1B069E5000B10E6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C14CA7A1B069E5000B10E6E /* Images.xcassets */; };
 		0C14CA7E1B069E5000B10E6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C14CA7C1B069E5000B10E6E /* LaunchScreen.xib */; };
 		0C14CA8A1B069E5000B10E6E /* ShipIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14CA891B069E5000B10E6E /* ShipIOTests.swift */; };
+		0CE835E81B06A1A000EEEEFB /* SJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE835E71B06A1A000EEEEFB /* SJob.swift */; };
+		0CE835EA1B06A21700EEEEFB /* SBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE835E91B06A21700EEEEFB /* SBuild.swift */; };
+		0CE835EF1B06A2EE00EEEEFB /* SUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE835EE1B06A2EE00EEEEFB /* SUser.swift */; };
+		0CE835F11B06A5A000EEEEFB /* SAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE835F01B06A5A000EEEEFB /* SAPIManager.swift */; };
 		79FE1C9C52083DFB0A5F9729 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BF82B539EEE726819F53E8 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -37,6 +41,10 @@
 		0C14CA831B069E5000B10E6E /* ShipIOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C14CA881B069E5000B10E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C14CA891B069E5000B10E6E /* ShipIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipIOTests.swift; sourceTree = "<group>"; };
+		0CE835E71B06A1A000EEEEFB /* SJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJob.swift; sourceTree = "<group>"; };
+		0CE835E91B06A21700EEEEFB /* SBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBuild.swift; sourceTree = "<group>"; };
+		0CE835EE1B06A2EE00EEEEFB /* SUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUser.swift; sourceTree = "<group>"; };
+		0CE835F01B06A5A000EEEEFB /* SAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPIManager.swift; sourceTree = "<group>"; };
 		5B16BF2160DEA9C17E165208 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		85BF82B539EEE726819F53E8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F198DE386A9AA86C0DB0A1B9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +92,8 @@
 		0C14CA701B069E5000B10E6E /* ShipIO */ = {
 			isa = PBXGroup;
 			children = (
+				0CE835ED1B06A2B200EEEEFB /* API */,
+				0CE835E61B06A17F00EEEEFB /* Models */,
 				0C14CA731B069E5000B10E6E /* AppDelegate.swift */,
 				0C14CA751B069E5000B10E6E /* ViewController.swift */,
 				0C14CA771B069E5000B10E6E /* Main.storyboard */,
@@ -117,6 +127,24 @@
 				0C14CA881B069E5000B10E6E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CE835E61B06A17F00EEEEFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CE835E71B06A1A000EEEEFB /* SJob.swift */,
+				0CE835E91B06A21700EEEEFB /* SBuild.swift */,
+				0CE835EE1B06A2EE00EEEEFB /* SUser.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0CE835ED1B06A2B200EEEEFB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0CE835F01B06A5A000EEEEFB /* SAPIManager.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		678CD6DC11B1368EE32FCB0F /* Frameworks */ = {
@@ -289,6 +317,10 @@
 			files = (
 				0C14CA761B069E5000B10E6E /* ViewController.swift in Sources */,
 				0C14CA741B069E5000B10E6E /* AppDelegate.swift in Sources */,
+				0CE835F11B06A5A000EEEEFB /* SAPIManager.swift in Sources */,
+				0CE835EA1B06A21700EEEEFB /* SBuild.swift in Sources */,
+				0CE835EF1B06A2EE00EEEEFB /* SUser.swift in Sources */,
+				0CE835E81B06A1A000EEEEFB /* SJob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
