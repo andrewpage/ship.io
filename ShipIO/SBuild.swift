@@ -21,4 +21,26 @@ class SBuild: NSObject {
     var uuid: String!
     var buildNumber: Int!
     var state: BuildState!
+    
+    static func buildStateFromString(state:String) -> BuildState {
+        var cleanState = state.lowercaseString
+        cleanState = cleanState.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        
+        switch(cleanState) {
+            case "queued":
+            return BuildState.Queued
+            case "started":
+            return BuildState.Started
+            case "passed":
+            return BuildState.Passed
+            case "failed":
+            return BuildState.Failed
+            case "cancelled":
+            return BuildState.Cancelled
+            case "timedout":
+            return BuildState.Cancelled
+            default:
+            return BuildState.Queued
+        }
+    }
 }

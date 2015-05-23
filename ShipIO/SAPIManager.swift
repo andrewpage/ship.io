@@ -11,11 +11,12 @@ import Alamofire
 import SwiftyJSON
 
 class SAPIManager: NSObject {
-    static let baseUrl = "https://app.ship.io/"
+    static let baseUrl = "https://api.ship.io/"
+    static let baseAPIPath = "api/rest/v1/"
     var accessToken: String!
     
     func login(email:String, password:String, success: () -> Void, failed: (errorMessage:String) -> Void) {
-        Alamofire.request(.POST, getAPIURL("authenticate"), parameters: ["email": email, "password": password])
+        Alamofire.request(.POST, getAPIURL("authenticate", useAPIPath: false), parameters: ["email": email, "password": password])
             .responseJSON { (_, _, json, error) in
                 if(error != nil) {
                     failed(errorMessage: "Usename or password incorrect.")
@@ -37,15 +38,33 @@ class SAPIManager: NSObject {
                     failed(errorMessage: "Could not load jobs.")
                 } else {
                     var json = JSON(json!)
-                    var jobs = [SJob]()
+                    var jobsJSON = json["jobs"]
+                    var buildsJSON = json["builds"]
                     
-                    for (key, subJson) in json {
+                    var jobs = [SJob]()
+                    var builds = [SBuild]()
+                    
+                    for (key, subJson) in jobsJSON {
                         var job = SJob()
                         
                         job.uuid = subJson["uuid"].stringValue
                         job.friendlyName = subJson["name"].stringValue
                         
                         jobs.append(job)
+                    }
+                    
+                    for (key, subJson) in buildsJSON {
+                        var build = SBuild()
+                        
+                        build.uuid = subJson["uuid"].stringValue
+                        build.buildNumber = subJson["buildNumber"].intValue
+                        build.state = SBuild.buildStateFromString(subJson["status"].stringValue)
+                        
+                        for job in jobs {
+                            if(job.uuid == subJson["job_uuid"].stringValue) {
+                                job.builds.append(build)
+                            }
+                        }
                     }
                     
                     success(jobs: jobs)
@@ -58,8 +77,14 @@ class SAPIManager: NSObject {
         return (accessToken != nil)
     }
     
-    private func getAPIURL(endpoint:String) -> String {
-        return SAPIManager.baseUrl + endpoint
+    private func getAPIURL(endpoint:String, useAPIPath:Bool = true) -> String {
+        var endpointToUse:String = endpoint;
+        
+        if(useAPIPath) {
+            endpointToUse = SAPIManager.baseAPIPath + endpointToUse
+        }
+
+        return SAPIManager.baseUrl + endpointToUse
     }
     
     private func authenticationParameters() -> Dictionary<String, String> {

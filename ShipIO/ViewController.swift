@@ -43,6 +43,10 @@ class ViewController: UIViewController {
                     self.apiManager.loadJobs({ (jobs) -> Void in
                         for job in jobs {
                             println("Name: " + job.friendlyName)
+                            
+                            for build in job.builds {
+                                    println("\tBuild: " + build.uuid)
+                            }
                         }
                     }, failed: { (errorMessage) -> Void in
                         println(errorMessage)
