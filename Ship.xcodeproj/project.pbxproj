@@ -13,7 +13,7 @@
 		0C14CA791B069E5000B10E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C14CA771B069E5000B10E6E /* Main.storyboard */; };
 		0C14CA7B1B069E5000B10E6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C14CA7A1B069E5000B10E6E /* Images.xcassets */; };
 		0C14CA7E1B069E5000B10E6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C14CA7C1B069E5000B10E6E /* LaunchScreen.xib */; };
-		0C14CA8A1B069E5000B10E6E /* ShipIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14CA891B069E5000B10E6E /* ShipIOTests.swift */; };
+		0C14CA8A1B069E5000B10E6E /* ShipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14CA891B069E5000B10E6E /* ShipTests.swift */; };
 		0CE835E81B06A1A000EEEEFB /* SJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE835E71B06A1A000EEEEFB /* SJob.swift */; };
 		0CE835EA1B06A21700EEEEFB /* SBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE835E91B06A21700EEEEFB /* SBuild.swift */; };
 		0CE835EF1B06A2EE00EEEEFB /* SUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE835EE1B06A2EE00EEEEFB /* SUser.swift */; };
@@ -27,22 +27,22 @@
 			containerPortal = 0C14CA661B069E5000B10E6E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0C14CA6D1B069E5000B10E6E;
-			remoteInfo = ShipIO;
+			remoteInfo = Ship;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C06DB4E1B06B5B200340108 /* JobsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
-		0C14CA6E1B069E5000B10E6E /* ShipIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShipIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C14CA6E1B069E5000B10E6E /* Ship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C14CA721B069E5000B10E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C14CA731B069E5000B10E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C14CA751B069E5000B10E6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C14CA781B069E5000B10E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C14CA7A1B069E5000B10E6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0C14CA7D1B069E5000B10E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0C14CA831B069E5000B10E6E /* ShipIOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C14CA831B069E5000B10E6E /* ShipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C14CA881B069E5000B10E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C14CA891B069E5000B10E6E /* ShipIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipIOTests.swift; sourceTree = "<group>"; };
+		0C14CA891B069E5000B10E6E /* ShipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipTests.swift; sourceTree = "<group>"; };
 		0CE835E71B06A1A000EEEEFB /* SJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJob.swift; sourceTree = "<group>"; };
 		0CE835E91B06A21700EEEEFB /* SBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBuild.swift; sourceTree = "<group>"; };
 		0CE835EE1B06A2EE00EEEEFB /* SUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUser.swift; sourceTree = "<group>"; };
@@ -74,8 +74,8 @@
 		0C14CA651B069E5000B10E6E = {
 			isa = PBXGroup;
 			children = (
-				0C14CA701B069E5000B10E6E /* ShipIO */,
-				0C14CA861B069E5000B10E6E /* ShipIOTests */,
+				0C14CA701B069E5000B10E6E /* Ship */,
+				0C14CA861B069E5000B10E6E /* ShipTests */,
 				0C14CA6F1B069E5000B10E6E /* Products */,
 				F29ACA12B25D684D2E63EFDA /* Pods */,
 				678CD6DC11B1368EE32FCB0F /* Frameworks */,
@@ -85,13 +85,13 @@
 		0C14CA6F1B069E5000B10E6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C14CA6E1B069E5000B10E6E /* ShipIO.app */,
-				0C14CA831B069E5000B10E6E /* ShipIOTests.xctest */,
+				0C14CA6E1B069E5000B10E6E /* Ship.app */,
+				0C14CA831B069E5000B10E6E /* ShipTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C14CA701B069E5000B10E6E /* ShipIO */ = {
+		0C14CA701B069E5000B10E6E /* Ship */ = {
 			isa = PBXGroup;
 			children = (
 				0CE835ED1B06A2B200EEEEFB /* API */,
@@ -104,7 +104,7 @@
 				0C14CA7C1B069E5000B10E6E /* LaunchScreen.xib */,
 				0C14CA711B069E5000B10E6E /* Supporting Files */,
 			);
-			path = ShipIO;
+			path = Ship;
 			sourceTree = "<group>";
 		};
 		0C14CA711B069E5000B10E6E /* Supporting Files */ = {
@@ -115,13 +115,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0C14CA861B069E5000B10E6E /* ShipIOTests */ = {
+		0C14CA861B069E5000B10E6E /* ShipTests */ = {
 			isa = PBXGroup;
 			children = (
-				0C14CA891B069E5000B10E6E /* ShipIOTests.swift */,
+				0C14CA891B069E5000B10E6E /* ShipTests.swift */,
 				0C14CA871B069E5000B10E6E /* Supporting Files */,
 			);
-			path = ShipIOTests;
+			path = ShipTests;
 			sourceTree = "<group>";
 		};
 		0C14CA871B069E5000B10E6E /* Supporting Files */ = {
@@ -170,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0C14CA6D1B069E5000B10E6E /* ShipIO */ = {
+		0C14CA6D1B069E5000B10E6E /* Ship */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C14CA8D1B069E5000B10E6E /* Build configuration list for PBXNativeTarget "ShipIO" */;
+			buildConfigurationList = 0C14CA8D1B069E5000B10E6E /* Build configuration list for PBXNativeTarget "Ship" */;
 			buildPhases = (
 				DA43B0D40A9FA1C5395F640D /* Check Pods Manifest.lock */,
 				0C14CA6A1B069E5000B10E6E /* Sources */,
@@ -185,14 +185,14 @@
 			);
 			dependencies = (
 			);
-			name = ShipIO;
-			productName = ShipIO;
-			productReference = 0C14CA6E1B069E5000B10E6E /* ShipIO.app */;
+			name = Ship;
+			productName = Ship;
+			productReference = 0C14CA6E1B069E5000B10E6E /* Ship.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0C14CA821B069E5000B10E6E /* ShipIOTests */ = {
+		0C14CA821B069E5000B10E6E /* ShipTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C14CA901B069E5000B10E6E /* Build configuration list for PBXNativeTarget "ShipIOTests" */;
+			buildConfigurationList = 0C14CA901B069E5000B10E6E /* Build configuration list for PBXNativeTarget "ShipTests" */;
 			buildPhases = (
 				0C14CA7F1B069E5000B10E6E /* Sources */,
 				0C14CA801B069E5000B10E6E /* Frameworks */,
@@ -203,9 +203,9 @@
 			dependencies = (
 				0C14CA851B069E5000B10E6E /* PBXTargetDependency */,
 			);
-			name = ShipIOTests;
-			productName = ShipIOTests;
-			productReference = 0C14CA831B069E5000B10E6E /* ShipIOTests.xctest */;
+			name = ShipTests;
+			productName = ShipTests;
+			productReference = 0C14CA831B069E5000B10E6E /* ShipTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -215,10 +215,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = ShipIO;
+				ORGANIZATIONNAME = Ship;
 				TargetAttributes = {
 					0C14CA6D1B069E5000B10E6E = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 37X9LPCY67;
 					};
 					0C14CA821B069E5000B10E6E = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -226,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0C14CA691B069E5000B10E6E /* Build configuration list for PBXProject "ShipIO" */;
+			buildConfigurationList = 0C14CA691B069E5000B10E6E /* Build configuration list for PBXProject "Ship" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C14CA6D1B069E5000B10E6E /* ShipIO */,
-				0C14CA821B069E5000B10E6E /* ShipIOTests */,
+				0C14CA6D1B069E5000B10E6E /* Ship */,
+				0C14CA821B069E5000B10E6E /* ShipTests */,
 			);
 		};
 /* End PBXProject section */
@@ -332,7 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C14CA8A1B069E5000B10E6E /* ShipIOTests.swift in Sources */,
+				0C14CA8A1B069E5000B10E6E /* ShipTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +342,7 @@
 /* Begin PBXTargetDependency section */
 		0C14CA851B069E5000B10E6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0C14CA6D1B069E5000B10E6E /* ShipIO */;
+			target = 0C14CA6D1B069E5000B10E6E /* Ship */;
 			targetProxy = 0C14CA841B069E5000B10E6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -454,9 +455,12 @@
 			baseConfigurationReference = 5B16BF2160DEA9C17E165208 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ShipIO/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Ship/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Ship;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -465,9 +469,12 @@
 			baseConfigurationReference = F198DE386A9AA86C0DB0A1B9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ShipIO/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Ship/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Ship;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -483,10 +490,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ShipIOTests/Info.plist;
+				INFOPLIST_FILE = ShipTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShipIO.app/ShipIO";
+				PRODUCT_NAME = ShipTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ship.app/Ship";
 			};
 			name = Debug;
 		};
@@ -498,17 +505,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ShipIOTests/Info.plist;
+				INFOPLIST_FILE = ShipTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShipIO.app/ShipIO";
+				PRODUCT_NAME = ShipTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ship.app/Ship";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C14CA691B069E5000B10E6E /* Build configuration list for PBXProject "ShipIO" */ = {
+		0C14CA691B069E5000B10E6E /* Build configuration list for PBXProject "Ship" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C14CA8B1B069E5000B10E6E /* Debug */,
@@ -517,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C14CA8D1B069E5000B10E6E /* Build configuration list for PBXNativeTarget "ShipIO" */ = {
+		0C14CA8D1B069E5000B10E6E /* Build configuration list for PBXNativeTarget "Ship" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C14CA8E1B069E5000B10E6E /* Debug */,
@@ -526,7 +533,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C14CA901B069E5000B10E6E /* Build configuration list for PBXNativeTarget "ShipIOTests" */ = {
+		0C14CA901B069E5000B10E6E /* Build configuration list for PBXNativeTarget "ShipTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C14CA911B069E5000B10E6E /* Debug */,

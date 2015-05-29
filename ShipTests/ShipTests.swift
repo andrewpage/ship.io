@@ -1,15 +1,15 @@
 //
-//  ShipIOTests.swift
-//  ShipIOTests
+//  ShipTests.swift
+//  ShipTests
 //
 //  Created by Andrew Page on 5/15/15.
-//  Copyright (c) 2015 ShipIO. All rights reserved.
+//  Copyright (c) 2015 Ship. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class ShipIOTests: XCTestCase {
+class ShipTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0C14CA6D1B069E5000B10E6E"
-               BuildableName = "ShipIO.app"
-               BlueprintName = "ShipIO"
-               ReferencedContainer = "container:ShipIO.xcodeproj">
+               BuildableName = "Ship.app"
+               BlueprintName = "Ship"
+               ReferencedContainer = "container:Ship.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0C14CA821B069E5000B10E6E"
-               BuildableName = "ShipIOTests.xctest"
-               BlueprintName = "ShipIOTests"
-               ReferencedContainer = "container:ShipIO.xcodeproj">
+               BuildableName = "ShipTests.xctest"
+               BlueprintName = "ShipTests"
+               ReferencedContainer = "container:Ship.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0C14CA821B069E5000B10E6E"
-               BuildableName = "ShipIOTests.xctest"
-               BlueprintName = "ShipIOTests"
-               ReferencedContainer = "container:ShipIO.xcodeproj">
+               BuildableName = "ShipTests.xctest"
+               BlueprintName = "ShipTests"
+               ReferencedContainer = "container:Ship.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C14CA6D1B069E5000B10E6E"
-            BuildableName = "ShipIO.app"
-            BlueprintName = "ShipIO"
-            ReferencedContainer = "container:ShipIO.xcodeproj">
+            BuildableName = "Ship.app"
+            BlueprintName = "Ship"
+            ReferencedContainer = "container:Ship.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C14CA6D1B069E5000B10E6E"
-            BuildableName = "ShipIO.app"
-            BlueprintName = "ShipIO"
-            ReferencedContainer = "container:ShipIO.xcodeproj">
+            BuildableName = "Ship.app"
+            BlueprintName = "Ship"
+            ReferencedContainer = "container:Ship.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C14CA6D1B069E5000B10E6E"
-            BuildableName = "ShipIO.app"
-            BlueprintName = "ShipIO"
-            ReferencedContainer = "container:ShipIO.xcodeproj">
+            BuildableName = "Ship.app"
+            BlueprintName = "Ship"
+            ReferencedContainer = "container:Ship.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
