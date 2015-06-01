@@ -13,7 +13,6 @@ class JobsViewController: UITableViewController, UITableViewDelegate, UITableVie
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "JobCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,10 +25,13 @@ class JobsViewController: UITableViewController, UITableViewDelegate, UITableVie
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var job = jobs[indexPath.row]
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("JobCell") as! UITableViewCell
+        var cell:JobTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("JobCell") as! JobTableViewCell
  
-        cell.textLabel?.text = job.friendlyName
-
+        
+        cell.nameLabel.text = job.friendlyName
+        cell.statusLabel.text = job.builds.last?.state.description
+        cell.buildLabel.text = "#\(job.builds.count)"
+        
         return cell
     }
     

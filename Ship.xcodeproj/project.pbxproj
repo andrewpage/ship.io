@@ -14,6 +14,7 @@
 		0C14CA7B1B069E5000B10E6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C14CA7A1B069E5000B10E6E /* Images.xcassets */; };
 		0C14CA7E1B069E5000B10E6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C14CA7C1B069E5000B10E6E /* LaunchScreen.xib */; };
 		0C14CA8A1B069E5000B10E6E /* ShipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14CA891B069E5000B10E6E /* ShipTests.swift */; };
+		0C7D3BF41B1D1844004174D4 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D3BF31B1D1844004174D4 /* JobTableViewCell.swift */; };
 		0CE835E81B06A1A000EEEEFB /* SJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE835E71B06A1A000EEEEFB /* SJob.swift */; };
 		0CE835EA1B06A21700EEEEFB /* SBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE835E91B06A21700EEEEFB /* SBuild.swift */; };
 		0CE835EF1B06A2EE00EEEEFB /* SUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE835EE1B06A2EE00EEEEFB /* SUser.swift */; };
@@ -43,6 +44,7 @@
 		0C14CA831B069E5000B10E6E /* ShipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C14CA881B069E5000B10E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C14CA891B069E5000B10E6E /* ShipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipTests.swift; sourceTree = "<group>"; };
+		0C7D3BF31B1D1844004174D4 /* JobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
 		0CE835E71B06A1A000EEEEFB /* SJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJob.swift; sourceTree = "<group>"; };
 		0CE835E91B06A21700EEEEFB /* SBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBuild.swift; sourceTree = "<group>"; };
 		0CE835EE1B06A2EE00EEEEFB /* SUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUser.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		0C14CA701B069E5000B10E6E /* Ship */ = {
 			isa = PBXGroup;
 			children = (
+				0C7D3BF51B1D1850004174D4 /* Views */,
 				0CE835ED1B06A2B200EEEEFB /* API */,
 				0CE835E61B06A17F00EEEEFB /* Models */,
 				0C14CA731B069E5000B10E6E /* AppDelegate.swift */,
@@ -130,6 +133,14 @@
 				0C14CA881B069E5000B10E6E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C7D3BF51B1D1850004174D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C7D3BF31B1D1844004174D4 /* JobTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		0CE835E61B06A17F00EEEEFB /* Models */ = {
@@ -326,6 +337,7 @@
 				0CE835EF1B06A2EE00EEEEFB /* SUser.swift in Sources */,
 				0C06DB4F1B06B5B200340108 /* JobsViewController.swift in Sources */,
 				0CE835E81B06A1A000EEEEFB /* SJob.swift in Sources */,
+				0C7D3BF41B1D1844004174D4 /* JobTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

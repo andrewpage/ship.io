@@ -9,13 +9,19 @@
 import UIKit
 
 class SBuild: NSObject {
-    enum BuildState {
-        case Queued
-        case Started
-        case Passed
-        case Failed
-        case Cancelled
-        case TimedOut
+    enum BuildState: String, Printable {
+        case Queued = "Queued"
+        case Started = "Started"
+        case Passed = "Passed"
+        case Failed = "Failed"
+        case Cancelled = "Cancelled"
+        case TimedOut = "Timed out"
+        
+        var description : String {
+            get {
+                return self.rawValue
+            }
+        }
     }
     
     var uuid: String!

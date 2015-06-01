@@ -41,29 +41,43 @@ class ViewController: UIViewController {
         
         if(email.isEmpty) {
             error("You must enter an email.")
+
             return
         } else if(password.isEmpty) {
-            error("You must enter a password.")
+            self.error("You must enter a password.")
+
             return
         } else {
-            clearError()
+            self.info("Logging in...")
             
             apiManager.login(email, password: password, success: { () in
-                    self.apiManager.loadJobs({ (jobs) -> Void in
-                        self.jobs = jobs
-
-                        self.performSegueWithIdentifier("LoginSegue", sender: self)
-                    }, failed: { (errorMessage) -> Void in
-                        println(errorMessage)
-                    })
-                },  failed: { (errorMessage: String) in
+                self.info("Loading jobs...")
+                
+                self.apiManager.loadJobs({ (jobs) -> Void in
+                    self.jobs = jobs
+                    self.performSegueWithIdentifier("LoginSegue", sender: self)
+                }, failed: { (errorMessage) -> Void in
+                    println(errorMessage)
+                })
+            },  failed: { (errorMessage: String) in
                 self.error(errorMessage)
             })
         }
     }
     
     func error(errorMessage: String) {
-        sErrorLabel.text = errorMessage;
+        sErrorLabel.text = errorMessage
+        sErrorLabel.textColor = UIColor.redColor()
+    }
+    
+    func info(infoMessage: String) {
+        sErrorLabel.text = infoMessage
+        sErrorLabel.textColor = UIColor.grayColor()
+    }
+    
+    func success(successMessage: String) {
+        sErrorLabel.text = successMessage
+        sErrorLabel.textColor = UIColor.greenColor()
     }
     
     func clearError() {
