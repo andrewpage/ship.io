@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sErrorLabel: UILabel!
     
     var apiManager: SAPIManager!
+    var jobs: [SJob]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "LoginSegue") {
+            let jvc : JobsViewController = segue.destinationViewController as! JobsViewController
+
+            jvc.jobs = jobs
+        }
+    }
+
     @IBAction func loginAction(sender: UIButton) {
         var email = sEmailField.text
         var password = sPasswordField.text
@@ -41,13 +50,9 @@ class ViewController: UIViewController {
             
             apiManager.login(email, password: password, success: { () in
                     self.apiManager.loadJobs({ (jobs) -> Void in
-                        for job in jobs {
-                            println("Name: " + job.friendlyName)
-                            
-                            for build in job.builds {
-                                    println("\tBuild: " + build.uuid)
-                            }
-                        }
+                        self.jobs = jobs
+
+                        self.performSegueWithIdentifier("LoginSegue", sender: self)
                     }, failed: { (errorMessage) -> Void in
                         println(errorMessage)
                     })

@@ -9,10 +9,11 @@
 import UIKit
 
 class JobsViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
+    var jobs: [SJob]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "JobCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,11 +21,16 @@ class JobsViewController: UITableViewController, UITableViewDelegate, UITableVie
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return jobs.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        var job = jobs[indexPath.row]
+        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("JobCell") as! UITableViewCell
+ 
+        cell.textLabel?.text = job.friendlyName
+
+        return cell
     }
     
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
