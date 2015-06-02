@@ -11,15 +11,16 @@ import Alamofire
 import SwiftyJSON
 
 class SAPIManager: NSObject {
-    static let baseUrl = "https://api.ship.io/"
-    static let baseAPIPath = "api/rest/v1/"
+    static let baseURL = "http://dev.ship.io:3000"
+    static let baseAPIPath = "api/rest/v1"
+    
     var accessToken: String!
     
     func login(email:String, password:String, success: () -> Void, failed: (errorMessage:String) -> Void) {
         Alamofire.request(.POST, getAPIURL("authenticate", useAPIPath: false), parameters: ["email": email, "password": password])
             .responseJSON { (_, _, json, error) in
                 if(error != nil) {
-                    failed(errorMessage: "Usename or password incorrect.")
+                    failed(errorMessage: "Username or password incorrect.")
                 } else {
                     var json = JSON(json!)
                     self.accessToken = json["access_token"].stringValue
@@ -81,10 +82,10 @@ class SAPIManager: NSObject {
         var endpointToUse:String = endpoint;
         
         if(useAPIPath) {
-            endpointToUse = SAPIManager.baseAPIPath + endpointToUse
+            endpointToUse = "\(SAPIManager.baseAPIPath)/\(endpointToUse)"
         }
 
-        return SAPIManager.baseUrl + endpointToUse
+        return "\(SAPIManager.baseURL)/\(endpointToUse)"
     }
     
     private func authenticationParameters() -> Dictionary<String, String> {

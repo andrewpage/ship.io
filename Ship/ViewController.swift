@@ -29,8 +29,8 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "LoginSegue") {
-            let jvc : JobsViewController = segue.destinationViewController as! JobsViewController
-
+            let jvc : JobsViewController = (segue.destinationViewController as! UINavigationController).viewControllers[0] as! JobsViewController
+            
             jvc.jobs = jobs
         }
     }
