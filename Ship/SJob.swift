@@ -13,7 +13,9 @@ class SJob: NSObject {
     var friendlyName: String!
     var builds: [SBuild]!
     
-    override init() {
-        builds = [SBuild]()
+    init(uuid:String, name:String) {
+        self.uuid = uuid
+        self.friendlyName = name
+        self.builds = [SBuild]()
     }
 }

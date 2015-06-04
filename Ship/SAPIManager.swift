@@ -46,20 +46,13 @@ class SAPIManager: NSObject {
                     var builds = [SBuild]()
                     
                     for (key, subJson) in jobsJSON {
-                        var job = SJob()
-                        
-                        job.uuid = subJson["uuid"].stringValue
-                        job.friendlyName = subJson["name"].stringValue
+                        var job = SJob(uuid: subJson["uuid"].stringValue, name: subJson["name"].stringValue)
                         
                         jobs.append(job)
                     }
                     
                     for (key, subJson) in buildsJSON {
-                        var build = SBuild()
-                        
-                        build.uuid = subJson["uuid"].stringValue
-                        build.buildNumber = subJson["buildNumber"].intValue
-                        build.state = SBuild.buildStateFromString(subJson["status"].stringValue)
+                        var build = SBuild(uuid: subJson["uuid"].stringValue, buildNumber: subJson["buildNumber"].intValue, state: subJson["status"].stringValue)
                         
                         for job in jobs {
                             if(job.uuid == subJson["job_uuid"].stringValue) {

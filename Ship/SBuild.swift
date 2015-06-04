@@ -28,6 +28,12 @@ class SBuild: NSObject {
     var buildNumber: Int!
     var state: BuildState!
     
+    init(uuid:String, buildNumber:Int, state:String) {
+        self.uuid = uuid
+        self.buildNumber = buildNumber
+        self.state = SBuild.buildStateFromString(state)
+    }
+    
     static func buildStateFromString(state:String) -> BuildState {
         var cleanState = state.lowercaseString
         cleanState = cleanState.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
