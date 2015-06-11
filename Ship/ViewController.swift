@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         
         apiManager = SAPIManager()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

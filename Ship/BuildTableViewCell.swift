@@ -9,9 +9,9 @@
 import UIKit
 
 class BuildTableViewCell: UITableViewCell {
-
     @IBOutlet weak var buildLabel: UILabel!
     @IBOutlet weak var stateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

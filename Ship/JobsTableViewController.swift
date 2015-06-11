@@ -11,6 +11,10 @@ import UIKit
 class JobsTableViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
     var jobs:[SJob]!
     
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return jobs.count
     }

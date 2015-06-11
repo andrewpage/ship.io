@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bPL-xJ-8M9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bPL-xJ-8M9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Authentication-->
@@ -69,7 +69,7 @@
             <objects>
                 <viewController title="Jobs View Controller" id="4nh-DS-RSy" userLabel="Jobs View Controller" customClass="JobsViewController" customModule="Ship" customModuleProvider="target" sceneMemberID="viewController">
                     <containerView key="view" opaque="NO" contentMode="scaleToFill" id="z9I-AR-C42">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <connections>
                             <segue destination="I0y-V6-0Fw" kind="embed" identifier="TableViewControllerEmbed" id="IlA-jM-pYO"/>
@@ -88,7 +88,7 @@
             <objects>
                 <tableViewController id="I0y-V6-0Fw" userLabel="Jobs Table View Controller" customClass="JobsTableViewController" customModule="Ship" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7U-D2-YIN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -142,7 +142,7 @@
             <objects>
                 <tableViewController title="Builds Controller" id="9yv-eU-OQb" customClass="JobBuildsTableViewController" customModule="Ship" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3C9-1x-v19">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -176,7 +176,10 @@
                             <outlet property="delegate" destination="9yv-eU-OQb" id="yx9-9r-DRe"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Builds" id="GQV-jf-tnB"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Builds" id="GQV-jf-tnB">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aE1-VK-QGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,11 +194,13 @@
                         <viewControllerLayoutGuide type="bottom" id="QkS-jE-g59"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JX3-9n-jAJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="oOS-6W-gRB"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="oOS-6W-gRB">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BvC-bb-01n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,7 +215,7 @@
                         <viewControllerLayoutGuide type="bottom" id="tmY-Nm-Una"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="stQ-cm-g5a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Job Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvf-G4-MXp">
@@ -222,7 +227,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Overview" id="Tie-lX-SfP"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Overview" id="Tie-lX-SfP">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="nameLabel" destination="Jvf-G4-MXp" id="LDZ-Ni-zhy"/>
                     </connections>
@@ -235,6 +243,7 @@
         <scene sceneID="xFj-TT-Jvh">
             <objects>
                 <tabBarController title="Job View Controller" id="cmz-dG-n2L" customClass="JobViewController" customModule="Ship" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hQL-Rw-52f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -259,7 +268,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tuy-lb-g6x">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="Tuy-lb-g6x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -277,7 +286,7 @@
             <objects>
                 <navigationController title="Main Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="U04-HG-9BT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tgH-cE-lgU">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" translucent="NO" id="tgH-cE-lgU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
