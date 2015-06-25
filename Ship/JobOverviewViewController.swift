@@ -17,8 +17,6 @@ class JobOverviewViewController: UIViewController {
         
         var parent:JobViewController = self.parentViewController as! JobViewController
         job = parent.job
-        
-        nameLabel.text = job.friendlyName
     }
 
     override func didReceiveMemoryWarning() {

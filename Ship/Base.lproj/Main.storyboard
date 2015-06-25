@@ -75,9 +75,7 @@
                             <segue destination="I0y-V6-0Fw" kind="embed" identifier="TableViewControllerEmbed" id="IlA-jM-pYO"/>
                         </connections>
                     </containerView>
-                    <navigationItem key="navigationItem" id="2pi-Jd-c6y">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="1vY-Cf-T7a"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="2pi-Jd-c6y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnZ-nk-aJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

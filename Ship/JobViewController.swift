@@ -13,6 +13,7 @@ class JobViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = job.friendlyName
     }
     
     override func viewWillAppear(animated: Bool) {
