@@ -509,6 +509,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Page (37X9LPCY67)";
 				INFOPLIST_FILE = Ship/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_NAME = Ship;
 				PROVISIONING_PROFILE = "b173aa4a-c632-461d-a0d8-249e94a2a50c";
 			};
@@ -622,6 +623,7 @@
 				);
 				INFOPLIST_FILE = Ship/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_NAME = Ship;
 				PROVISIONING_PROFILE = "b173aa4a-c632-461d-a0d8-249e94a2a50c";
 			};
