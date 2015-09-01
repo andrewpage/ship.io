@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         clearError()
         
         apiManager = SAPIManager()
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "dismissKeyboard"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,6 +83,11 @@ class ViewController: UIViewController {
     
     func clearError() {
         sErrorLabel.text = ""
+    }
+ 
+    func dismissKeyboard() {
+        sEmailField.resignFirstResponder()
+        sPasswordField.resignFirstResponder()
     }
 }
 
