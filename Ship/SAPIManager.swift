@@ -11,7 +11,12 @@ import Alamofire
 import SwiftyJSON
 
 class SAPIManager: NSObject {
+    #if DEBUG
     static let baseURL = "http://dev.ship.io:3000"
+    #else
+    static let baseURL = "http://api.ship.io"
+    #endif
+
     static let baseAPIPath = "api/rest/v1"
     
     var accessToken: String!
