@@ -9,10 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    #if DEBUG
+    let debugMode = true
+    #else
+    let debugMode = false
+    #endif
+
     @IBOutlet weak var sEmailField: UITextField!
     @IBOutlet weak var sPasswordField: UITextField!
     @IBOutlet weak var sErrorLabel: UILabel!
-    
+    @IBOutlet weak var sDebugModeLabel: UILabel!
+
     var apiManager: SAPIManager!
     var jobs: [SJob]!
     
@@ -22,6 +29,11 @@ class ViewController: UIViewController {
         
         apiManager = SAPIManager()
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "dismissKeyboard"))
+        if(debugMode) {
+            sDebugModeLabel.hidden = false
+        } else {
+            sDebugModeLabel.hidden = true
+        }
     }
 
     override func didReceiveMemoryWarning() {

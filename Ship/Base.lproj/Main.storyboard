@@ -108,6 +108,7 @@
                     <navigationItem key="navigationItem" id="qpm-Ye-VWT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="sDebugModeLabel" destination="RrH-io-uQf" id="XYe-By-QGS"/>
                         <outlet property="sEmailField" destination="cVb-72-lLi" id="abI-4D-Pol"/>
                         <outlet property="sErrorLabel" destination="Q6g-wn-sUP" id="wCF-UF-YWv"/>
                         <outlet property="sPasswordField" destination="jKG-Oe-ncV" id="eKS-7s-e6v"/>
