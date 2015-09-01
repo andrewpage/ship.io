@@ -17,4 +17,6 @@ DerivedData
 *.ipa
 *.xcuserstate
 
+.DS_STORE
+
 Pods/
